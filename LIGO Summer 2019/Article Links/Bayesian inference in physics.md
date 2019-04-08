@@ -14,7 +14,9 @@ i.e. "the probability of A given B occurs is equal to the probability of B given
 
 ## Abstract
 
-Bayesian principles are used in several systems that are given as example. Some systems include spectrum restoration, parameter estimation, model copmarison, and in dealing with systems of inconsistent data (inconsistencies from incorrect estimation of errors OR from distortions of the measurement signal).
+Bayesian principles are used in several systems that are given as example. 
+Some systems include spectrum restoration, parameter estimation, model copmarison, and in dealing with systems of inconsistent data.
+Systems of inconsistent data are particularly interesting as inconsistencies canarise from incorrect estimation of errors or from distortions of the measurement signal.
 
 
 ## Introduction
