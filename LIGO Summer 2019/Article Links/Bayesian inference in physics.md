@@ -21,9 +21,23 @@ Systems of inconsistent data are particularly interesting as inconsistencies can
 
 ## Introduction
 
+Bayesian methods are not as useful in fields where active experiments can be repeated in principle in order to satisfy precision requirements. This argument breaks down when you are looking at experiments that have large, expensive equipment that operate on tight budgets. Similarly, observational fields such as astronomy and astrophysics cannot be augmented at will, thus the data that can be collected must be squeezed for information at the maximum efficiency possible.
+
 ### Bayesian Principles
 
-Yeet
+Beginning with a probability function P(d,O | I), where d,O are two variables that are conditional on all background information I. This two-variable function can be decomposed into separate one-variable functions in the following steps:
+	
+	- P(d,O | I) =  P(O | I) * P(d | O,I) = P(d | I) * P(O | d,I)
+
+Associating variable "d" with data, and "O" with the model parameter, and "I" with all other information relating parameters to data.
+
+Rearranging terms in the two lines yields <u>Bayes' Theorem:</u>
+
+	- P(O | d, I) = P(d | O, I) * P(O | I) / P(d | I)
+
+<u>Marginalization</u> is a critical tool that provides a way to eliminate uninteresting variables from a problem that can't easily be removed as they are needed to formulate the likelihood. The form is as follows:
+
+	- P(d | I) = integral( P(O | I) * ")
 
 
 ### 
