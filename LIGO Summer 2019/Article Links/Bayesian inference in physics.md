@@ -1,4 +1,4 @@
-##Bayesian Inference in Physics
+# Bayesian Inference in Physics
 ### By V Dose
 [Link To Article](http://www2.ipp.mpg.de/~rrf/bda/Publications/Papers/dose03b.pdf)
 
@@ -14,7 +14,14 @@ i.e. "the probability of A given B occurs is equal to the probability of B given
 
 ## Abstract
 
-Bayesian principles are used in several systems that are given as example.
+Bayesian principles are used in several systems that are given as example. Some systems include spectrum restoration, parameter estimation, model copmarison, and in dealing with systems of inconsistent data (inconsistencies from incorrect estimation of errors OR from distortions of the measurement signal).
 
 
 ## Introduction
+
+### Bayesian Principles
+
+Yeet
+
+
+### 
