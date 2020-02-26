@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script to activate environment and run jupyter
+
+DIR={2:-/home/jorger/GitHub}
+cd DIR
+
+#source activate IFO-inf-env
+#python code/test.py
+
+jupyter lab
+
