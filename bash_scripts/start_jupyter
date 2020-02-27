@@ -1,4 +1,4 @@
-#input!/usr/bin/env bash
+#!/bin/bash
 # script to activate environment and run jupyter
 
 DIR=${1:-"/home/jorger/GitHub"}
