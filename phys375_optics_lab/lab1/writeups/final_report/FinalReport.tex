@@ -1,0 +1,125 @@
+\documentclass[colorlinks=true,pdfstartview=FitV,linkcolor=blue,
+            citecolor=red,urlcolor=magenta]{basedoc}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{cleveref}
+
+\title{Experimental Methods for Determining Refraction Indices and Critical Angles of Various Acrylic Glass Media}
+\author{Jorge Ramirez \\
+Professor Ellen Williams, Abish Dev}
+
+
+\begin{document}
+
+  \begin{abstract}
+    Two experimental methods were used to determine the indices of refraction and critical angles in acrylic glass media. The first method was conducted on a semi-circle glass prism, and the second method was conducted on a rectangular glass prism, both of thickness $10.51 \pm 0.05$mm.
+    \\
+    \indent The first method measured the critical angle and index of refraction by visually determining the rotation angle at which the incident laser beam was totally internally reflected. This angle was measured from the normal, and was measured in the CW and CCW directions to be $42.3^{\circ} \pm 0.35^{\circ}$ and $42.4^{\circ} \pm 0.35^{\circ}$ respectively. The indices of refraction were then calculated to be $1.486 \pm 0.35$ and $1.483 \pm 0.35$.
+    \\
+    \indent The second method measured the displacement in the transmitted laser beam as the rectangular prism was rotated in increments of $10^{\circ}$ up to $50^{circ}$. This displacement was then used to calculate the index of refraction for each given rotation angle and then the final value for CW and CCW rotations was averaged in each direction to obtain $1.472 \pm $ and  $1.479 \pm $.
+
+  \end{abstract}
+
+\section{Introduction}
+  This study was conducted with the intent to test experimental methods to measure the the indices of refraction of geometric acrylic glass media commonly found in undergraduate laboratories. The indices of refraction were calculated using Snell's Law which governs the behavior of straight-line beams passing through mediums with different indices of refraction, which is shown below.
+
+      \begin{equation} \label{eq:snell}
+        n_1 sin(\theta_1) = n_2 sin(\theta_2)
+      \end{equation}
+
+  In both experiments, $n_1$ was the index of refraction of the glass prism, and $\theta_1$ was the angle of the incident beam measured to the normal of the surface. $n_2$ was set to be the index of refraction of air, close to 1, and $\theta_2$ was the calculated angle of refraction which can be seen in the figure below.
+
+
+      \begin{figure}[!h]
+        \begin{center}
+        \includegraphics[width=3in]{resources/snells_law.png}
+        \caption{The incident beam approaches from the left, and is displaced a distance $d$. Inside the glass acrylic, the beam is deflected by the angle of refraction $\theta_2$ (Eno, 2019)}
+        \label{fig:snellslaw}
+        \end{center}
+      \end{figure}
+
+\section{Equipment and Procedures}
+
+  The optical bench was setup with a laser and rotating mount for the prisms to be locked in place. The mount allowed for precise rotations using a vernier scale which gave a precision of $\pm0.1^{\circ}$. At the far end of the bench was a motor-mounted photodiode, with an adjustable iris that was set to give as small of an aperture as possible in order to accurately record the transmitted laser profile. For all measurements the gain was set to give as high of a reading as possible without oversaturating the photodiode, whose maximum input voltage was $~10V$.
+  
+  For the first experimental method a semi-circular prism was placed onto the mount. rotated slowly $\pm 10^{\circ}$, where the positive was defined to be the CW direction.
+
+
+
+\section{Data Analysis}
+
+  The first milestone accompl
+
+    \begin{equation} \label{eq:etran}
+     \frac {E_{tran}} {E_{in}} = \frac {-t_i t_e e^{2i\phi}} {1 - r_i r_e e^{2i\phi}} * J_{0/1}(\Gamma)
+    \end{equation}
+
+
+    \begin{figure}[!h]
+      \begin{center}
+      \includegraphics[width=6.5in]{resources/Carrier_Reflected.pdf}
+      \caption{These four plots show thels agree with this conclusion. }
+      \label{fig:Carrier_Reflected}
+      \end{center}
+    \end{figure} \clearpage
+
+
+  \section{Discussion of Data}
+
+
+\section{Sources of Uncertainty}
+  The immediate future work involves improvingargins of error.
+
+
+
+\section{Conclusions}
+  The immediate future work involves improvingargins of error.
+
+
+
+\begin{thebibliography}{9}
+
+  \bibitem{GW Falloff}
+    Eno, C. Sarah. Upadhyaya, Arpita. Williams, Ellen. Lab Manual ``PHYS 375 - Experiment I: Refraction and Reflection.'' February 10, 2020.
+
+
+\end{thebibliography} %Must end the environment
+
+
+\appendix \clearpage
+
+\section{Data Analysis Code} \label{appendix:a}
+
+  This is the code used to create a virtual two mirror cavity.1
+    \begin{verbatim}
+      #our two mirror cavity
+
+      s space2 0.037 1 n4 n5
+      m mirror2 0.999 0.001 0 n5 n6
+    \end{verbatim}
+
+
+
+\section{Matlab Code} \label{appendix:B}
+
+  This is the code used to create a virtual two mirror cavity.1
+    \begin{verbatim}
+      #our two mirror cavity
+
+      s space2 0.037 1 n4 n5
+      m mirror2 0.999 0.001 0 n5 n6
+    \end{verbatim}
+
+
+
+\end{document}
