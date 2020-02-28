@@ -72,13 +72,13 @@ Professor Ellen Williams, Abish Dev}
   With this angle of refraction $\theta_2$, the study then calculated the index of refraction using equation (6). (Eno, 2019).
 
   \begin{equation} \label{eq:ind_refr_ang_refr}
-      n^2 = sin^2 \theta_1 \ [1 + \left[ \frac {cos\theta_1} {sin(\theta_1) - \frac{d}{L} } \right] ^2 ]
+      n^2 = sin^2 \theta_1 \ [1 + \left[ \frac {cos(\theta_1)} {sin(\theta_1) - \frac{d}{L} } \right] ^2 ]
   \end{equation}
 
 
+\pagebreak
 \section{Equipment and Procedures}
-
-  The optical bench was setup with a 635nm coherent laser and rotating mount for the prisms to be locked in place. The mount allowed for precise rotations using a vernier scale which gave a precision of $\pm0.1^{\circ}$. At the far end of the bench was a motor-mounted photodiode, with an adjustable iris that was set to give as small of an aperture as possible in order to accurately record the transmitted laser profile. For all measurements the gain was set to give as high of a reading as possible without oversaturating the photodiode, whose maximum input voltage was $10$V.
+  The optical bench was setup with a 635nm coherent laser and rotating mount for the prisms to be locked in place. The mount allowed for precise rotations using a vernier scale which gave a precision of $\pm0.1^{\circ}$ for which the half least-count rule gives $\pm0.05^{\circ}$. At the far end of the bench was a motor-mounted photodiode, with an adjustable iris that was set to give as small of an aperture as possible in order to accurately record the transmitted laser profile. For all measurements the gain was set to give as high of a reading as possible without oversaturating the photodiode, whose maximum input voltage was $10$V.
 
     \begin{figure}[!h]
       \begin{center}
@@ -88,40 +88,75 @@ Professor Ellen Williams, Abish Dev}
       \end{center}
     \end{figure}
 
-
   The mount to hold the acrylic glass prisms was aligned by using the reflected beam off of the prism and aligning it back into the laser source. This alignment was done relative to the 0$^{\circ}$ marking on the mount itself. This ensured for both methods that the 0$^{\circ}$ reference angle was truly normal to the surface of the prism, and thus all equations used were valid. The figure above shows the aligned prism mount.
 
   The data was collected using a Matlab script interfacing with the photodiode through a ADC known as LabJack. Several Matlab scripts were used to perform functions such as probing the photodiode voltage, translating the photodiode, and collecting data based off of a given range of positions to scan through with the photodiode.
 
-
+\pagebreak
 \section{Data Analysis}
+  The first method collected two sets of data. The semi-circular prism was rotated manually until the transmitted beam was near half intensity and when the transmited beam completely disappeared. These values were recorded, and this process was repeated in the CCW direction.
 
+  \begin{figure}[!h]
+    \begin{center}
+    \includegraphics[width=5in]{resources/partA_data_table.png}
+    \caption{This table shows the initial measurements in the CW and CCW directions, and then their averaged value and uncertainties.}
+    \label{fig:partA_data_table}
+    \end{center}
+  \end{figure}
 
+  The second method also collected two sets of data. The rectangular prism was rotated CW from 10$^{\circ}$ to 50$^{\circ}$ in increments of 10$^{\circ}$. This was repeated in the CCW direction noting that the incident angle would be negative.
 
+    \begin{figure}[!h]
+      \begin{center}
+      \includegraphics[width=5.5in]{resources/Transmitted_Beam_Profiles.pdf}
+      \caption{This table shows the beam profiles for the CCW and CW directions relative to a fixed $\theta_1 = 0^{\circ}$ position shown in black.}
+      \label{fig:partB_plot}
+      \end{center}
+    \end{figure}
+
+    \begin{figure}[!h]
+      \begin{center}
+      \includegraphics[width=3in]{resources/partB_data_table.png}
+      \caption{This table shows the initial set of distance measurements in the CW and CCW directions based on the plot above and equations (5) and (6)}
+      \label{fig:partB_data_table}
+      \end{center}
+    \end{figure}
+
+  With these values for the distance with respect to the angle of incidence, the angle of refraction for each measurement was calculated, and then the index of refraction.
+
+  Finally, these values for the index of refraction vary wildly due to the imperfections and noise intrinsic to the experiment. Different incident angles led to different path lengths for the internal beam, and thus each beam would experience a varying amount of imperfections leading to noise in the collected data. This noise was reduced by taking every index of refraction, incident angle, and refraction angle, and then using a linear fit on equation (1). The linear fit can be seen below.
+
+    \begin{figure}[!h]
+      \begin{center}
+      \includegraphics[width=5in]{resources/LinearFit.pdf}
+      \caption{$\theta$ refers to $\theta_1$, the angle of incidence, and $\alpha$ refers to $\theta_2$, the angle of refraction. Although each data point had intrinsic noise due to the imperfections in the acrylic glass, this linear fit gave the final reported value for the index of refraction to be $n_1 = 1.5002$. The error in the fit does not reflect the true uncertainty of the experiment.}
+      \label{fig:lin_fit_snell}
+      \end{center}
+    \end{figure}
+
+\pagebreak
 \section{Sources of Uncertainty}
-
   Since the largest uncertainties in this experiment were going to be from alignment issues, several procedures were put in place to minimize the error in alignment. The laser beam needed to be at 0$^{\circ}$ inclination and 0$^{\circ}$ azimuth. These two 0$^{\circ}$ angles were alligned to satisfactory precision by using a stationary block to mark the position of the beam $1$ cm away from the source. The stationary block was then moved to the far end of the optical bench, and the beam was aligned to that same mark to ensure a horizontal beam relative to the bench itself, and that the beam was not rotated to the left or right. The uncertainty associated with this process was estimated to be about $\sigma_{\theta_1} = \pm 0.5^{\circ}$.
 
-  For the first experimental method, a semi-circular prism was placed onto the mount. The critical angle was defined to be the angle at which the intensity of the transmitted beam drops to zero and the beam is totally internally reflected, however there was the issue of making the judgment call as to what value to assign to the critical angle. The intensity of the transmitted beam fell off rather than disappearing instantaneously. In order to minimize the uncertainty in the reported value, three separate angles were recorded for medium, low, and zero intensity transmitted beam. The critical angle was then taken to be the average of these values and the uncertainty below.
+  For the first experimental method, a semi-circular prism was placed onto the mount. The critical angle was defined to be the angle at which the intensity of the transmitted beam drops to zero and the beam is totally internally reflected, however there was the issue of making the judgment call as to what value to assign to the critical angle. The intensity of the transmitted beam fell off rather than disappearing instantaneously. In order to minimize the uncertainty in the reported value, three separate angles were recorded for medium, low, and zero intensity transmitted beam. The critical angle was then taken to be the average of these values and the uncertainty calculated below.
 
   \begin{equation} \label{eq:sigma_theta_c}
       \sigma_{\theta_c} = \frac {\text{stdev}(\theta_{c1}, \theta_{c2}, \theta_{c3})} {\sqrt{3}}
   \end{equation}
 
+  For the second experimental method, a rectangular prism was placed onto the mount. The long side of the prism was placed flat inside the holding mechanism. Placing the prism so that the long side was vertical could potentially lead to the prism itself tilting forwards or backwards, so the horizontal was chosen.
 
+  Since there was large variations in the calculated refracted angle, the index of refraction also varied greatly. This most likely was caused by internal imperfections of the prism. Great care was taken in cleaning the surface of the laser beam source and the prism to minimize the effect of smudges and dust. To measure this in the future, a future study could analyze the effect that different thicknesses of prisms has on the standard deviation of measured indices of refraction.
 
-  The value of the index of refraction for each angle was expected to vary somewhat greatly due to hidden imperfections in the acrylic glass. Different incident angles led to different path lengths for the internal beam, and thus each beam would experience a varying amount of imperfections leading to noise in the collected data. This noise was reduced by repeating for many angles and then using a linear fit on equation (1).
+  In both methods, the relative fuzziness of the beam, and issues arising from the alignment never being truly perfect introduced uncertainties and noise into the data that is beyond the scope of these methods to account for. The methods also assume conventional ray optics, completely ignoring the Gaussian behaviors of the laser beams or the Hermite-Gaussian spatial modes that occur at critical angles.
 
-  \begin{figure}[!h]
-    \begin{center}
-    \includegraphics[width=6in]{resources/LinearFit.pdf}
-    \caption{\theta refers to \theta_1, the angle of incidence, and \alpha refers to \theta_2, the angle of refraction. Although each data point had intrinsic noise due to the imperfections in the acrylic glass, this linear fit gave the final reported value for the index of refraction to be $n_1 = 1.5002 \pm 0.0038$.}
-    \label{fig:lin_fit_snell}
-    \end{center}
-  \end{figure}
 
 \section{Conclusions}
-  The immediate future work involves improvingargins of error.
+  Two experimental methods for determining the index of refraction of acrylic glass were tested. The first method found the critical angle of a semi-circular prism to be $42.3^{\circ} \pm 0.35^{\circ}$ and $42.4^{\circ} \pm 0.35^{\circ}$ for the CW and CCW directions respectively. From these two values the indices of refraction from the first method were $1.486 \pm 0.35$ and $1.483 \pm 0.35$.
+
+  In the second method, the index of refraction of a glass plate placed vertically were calculated to be $1.5002 \pm 0.0038$, after conducting a linear fit on the indices of refraction calculated in $10^{\circ}$ increments.
+
+  These values from both methods are in good agreement, however the uncertainty of the second method is much smaller than the first method since it had more data to work with.
 
 
 
@@ -130,34 +165,6 @@ Professor Ellen Williams, Abish Dev}
   \bibitem{GW Falloff}
     Eno, C. Sarah. Upadhyaya, Arpita. Williams, Ellen. Lab Manual ``PHYS 375 - Experiment I: Refraction and Reflection.'' February 10, 2020.
 
-
 \end{thebibliography} %Must end the environment
-
-
-\appendix \clearpage
-
-\section{Data Analysis Code} \label{appendix:a}
-
-  This is the code used to create a virtual two mirror cavity.1
-    \begin{verbatim}
-      #our two mirror cavity
-
-      s space2 0.037 1 n4 n5
-      m mirror2 0.999 0.001 0 n5 n6
-    \end{verbatim}
-
-
-
-\section{Matlab Code} \label{appendix:B}
-
-  This is the code used to create a virtual two mirror cavity.1
-    \begin{verbatim}
-      #our two mirror cavity
-
-      s space2 0.037 1 n4 n5
-      m mirror2 0.999 0.001 0 n5 n6
-    \end{verbatim}
-
-
 
 \end{document}
