@@ -31,56 +31,54 @@ Professor Ellen Williams, Abish Dev}
   \end{abstract}
 
 \section{Introduction}
-  This study was conducted with the intent to test experimental methods to measure the the indices of refraction of geometric acrylic glass media commonly found in undergraduate laboratories. The indices of refraction were calculated using Snell's Law which governs the behavior of straight-line beams passing through mediums with different indices of refraction, which is shown below.
+  This study was conducted with the intent to test experimental methods to measure the the indices of refraction of geometric acrylic glass media commonly found in undergraduate laboratories. The indices of refraction were calculated using Snell's Law which governs the behavior of light rays passing through mediums with different indices of refraction. The equation used is shown below.
 
-      \begin{equation} \label{eq:snell}
-        n_1 sin(\theta_1) = n_2 sin(\theta_2)
-      \end{equation}
+    \begin{equation} \label{eq:snell}
+      n_1 sin(\theta_1) = n_2 sin(\theta_2)
+    \end{equation}
 
-  In both experiments, $n_1$ was the index of refraction of the glass prism, and $\theta_1$ was the angle of the incident beam measured to the normal of the surface. $n_2$ was set to be the index of refraction of air, close to 1, and $\theta_2$ was the calculated angle of refraction which can be seen in the figure below.
+  In both experiments, $n_1$ was the index of refraction of the glass prism, and $\theta_1$ was the calculated angle of refraction which can be seen in the figure below. $n_2$ was set to be the index of refraction of air, close to 1, and $\theta_2$ was the angle of the incident beam measured to the normal of the surface.
 
 
-      \begin{figure}[!h]
-        \begin{center}
-        \includegraphics[width=3in]{resources/snells_law.png}
-        \caption{The incident beam approaches from the left, and is displaced a distance $d$. Inside the glass acrylic, the beam is deflected by the angle of refraction $\theta_2$ (Eno, 2019)}
-        \label{fig:snellslaw}
-        \end{center}
-      \end{figure}
+    \begin{figure}[!h]
+      \begin{center}
+      \includegraphics[width=3in]{resources/snells_law.png}
+      \caption{The incident beam approaches from the left, and is displaced a distance $d$. Inside the acrylic glass, the beam is deflected by the angle of refraction $\theta_2$ (Eno, 2019)}
+      \label{fig:snellslaw}
+      \end{center}
+    \end{figure}
 
 \section{Equipment and Procedures}
 
-  The optical bench was setup with a laser and rotating mount for the prisms to be locked in place. The mount allowed for precise rotations using a vernier scale which gave a precision of $\pm0.1^{\circ}$. At the far end of the bench was a motor-mounted photodiode, with an adjustable iris that was set to give as small of an aperture as possible in order to accurately record the transmitted laser profile. For all measurements the gain was set to give as high of a reading as possible without oversaturating the photodiode, whose maximum input voltage was $~10V$.
-  
-  For the first experimental method a semi-circular prism was placed onto the mount. rotated slowly $\pm 10^{\circ}$, where the positive was defined to be the CW direction.
+  The optical bench was setup with a 635nm coherent laser and rotating mount for the prisms to be locked in place. The mount allowed for precise rotations using a vernier scale which gave a precision of $\pm0.1^{\circ}$. At the far end of the bench was a motor-mounted photodiode, with an adjustable iris that was set to give as small of an aperture as possible in order to accurately record the transmitted laser profile. For all measurements the gain was set to give as high of a reading as possible without oversaturating the photodiode, whose maximum input voltage was $~10V$.
+
+  Since the largest uncertainties in this experiment were going to be from alignment issues, several procedures were put in place to minimize the error in alignment. The laser beam needed to be at 0$^{\circ}$ inclination and 0$^{\circ}$ azimuth. These two 0$^{\circ}$ angles were alligned to satisfactory precision by using a stationary block to mark the position of the beam $1$cm away from the source. The stationary block was then moved to the far end of the optical bench, and the beam was aligned to that same mark to ensure a horizontal beam relative to the bench itself.
+
+    \begin{figure}[!h]
+      \begin{center}
+      \includegraphics[angle=270,width=3in]{resources/prism_mount.jpeg}
+      \caption{The rotating mount can be seen in the center of the optical bench, with the laser to its left and the stationary blocked used to track the beam at various locations on the right.}
+      \label{fig:prism_mount}
+      \end{center}
+    \end{figure}
+
+  The mount to hold the acrylic glass prisms was aligned by using the reflected beam off of the prism and aligning it back into the laser source. This alignment was done relative to the 0$^{\circ}$ marking on the mount itself. This ensured for both methods that the 0$^{\circ}$ reference angle was truly normal to the surface of the prism, and thus all equations used were valid. The figure above shows the aligned prism mount.
+
+
+
+
 
 
 
 \section{Data Analysis}
 
-  The first milestone accompl
-
-    \begin{equation} \label{eq:etran}
-     \frac {E_{tran}} {E_{in}} = \frac {-t_i t_e e^{2i\phi}} {1 - r_i r_e e^{2i\phi}} * J_{0/1}(\Gamma)
-    \end{equation}
 
 
-    \begin{figure}[!h]
-      \begin{center}
-      \includegraphics[width=6.5in]{resources/Carrier_Reflected.pdf}
-      \caption{These four plots show thels agree with this conclusion. }
-      \label{fig:Carrier_Reflected}
-      \end{center}
-    \end{figure} \clearpage
-
-
-  \section{Discussion of Data}
-
+\section{Discussion of Data}
+  
 
 \section{Sources of Uncertainty}
-  The immediate future work involves improvingargins of error.
-
-
+  For the first experimental method a semi-circular prism was placed onto the mount. The critical angle was defined to be the angle at which the intensity of the transmitted beam drops to zero and the beam is totally internally reflected, however there was the issue of making the judgment call as to what value to assign to the critical angle. The intensity of the transmitted beam fell off rather than immediately disappearing. In order to minimize the uncertainty in the measured value, three separate angles were recorded for medium, low, and zero intensity transmitted beam. The critical angle was then taken to be the average of these values and the uncertainty reduced by a factor of $\sqrt{3}$. The index of refraction was then calculated using the following equation.
 
 \section{Conclusions}
   The immediate future work involves improvingargins of error.
