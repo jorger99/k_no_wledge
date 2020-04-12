@@ -1,0 +1,4 @@
+#!/bin/bash
+# script to unblock wifi driver from ideapad config
+
+echo "blacklist ideapad-laptop" | sudo tee /etc/modprobe.d/ideapad-laptop.conf

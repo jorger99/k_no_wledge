@@ -11,3 +11,7 @@ description of command
 ### start_jupyter
 `start_jupyter <DIR>` \
 this script creates a jupyter lab environment in the directory specified by the argument \<DIR>. If \<DIR> is not specified, it takes the default directory to be $HOME/GitHub/
+
+### fix_ideapad_wifi
+'fix_ideapad_wifi' \
+this script is a command I need to run every so often or whenever I have a fresh install of linux in order to disable the hard block on wifi. Why? I have no idea. It just works.
