@@ -1,9 +1,9 @@
 #!/bin/bash
-# script to activate environment and run jupyter
+# script to initialize virtual php server
 
 # start server
 sudo /opt/lampp/lampp start
 
 # start GUI
 cd /opt/lampp
-sudo ./manager-linux.run (or manager-linux-x64.run)
+sudo ./manager-linux-x64.run
